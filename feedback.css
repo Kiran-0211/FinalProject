@@ -1,0 +1,562 @@
+img {
+    border-radius: 20px;
+    border: 3px solid white;
+    background: linear-gradient(120deg, rgb(233, 86, 86) 0%, orange 25%, lightblue 50%, rgb(241, 116, 137) 75%, rgb(71, 240, 71) 100%);
+    animation: progress 4s ease-in-out infinite;
+}
+
+body {
+    background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: indianred;
+    background-image: url(images/dark.jpg);
+}
+
+#btn {
+    border-radius: 20px;
+    transition: all 0.4s ease-out;
+}
+
+#btn:hover {
+    background-color: yellow;
+    color: red;
+    transform: scale(1.1);
+}
+
+#header {
+    transition: all 0.4s ease-out;
+}
+
+#header:hover {
+    background-color: aqua;
+    color: red;
+    transform: scale(1.07);
+    border-radius: 3rem;
+}
+
+#nav_items {
+    transition: all 0.4s ease-out;
+}
+
+#nav_items:hover {
+    background-color: rgb(168, 233, 190);
+    border-radius: 15px;
+    color: red;
+}
+
+#mybmsce {
+    transition: all 0.4s ease-out;
+}
+
+body {
+    background-color: rgb(226, 117, 117);
+}
+
+@keyframes progress {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(350deg);
+    }
+}
+
+.float {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    stroke: #fff;
+    background-color: #25D366;
+    border-color: #fff
+}
+
+.resp-sharing-button__icon,
+.resp-sharing-button__link {
+    display: inline-block
+}
+
+.resp-sharing-button__link {
+    text-decoration: none;
+    color: #fff;
+    margin: .5em
+}
+
+.resp-sharing-button {
+    border-radius: 5px;
+    transition: 25ms ease-out;
+    padding: .2em .7em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.resp-sharing-button__icon svg {
+    width: 1.9em;
+    height: 2.4em;
+    margin-left: .1em
+}
+
+.resp-sharing-button--small svg {
+    margin: 0;
+    vertical-align: middle
+}
+
+.resp-sharing-button__icon {
+    stroke: #fff;
+    fill: none
+}
+
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+    fill: #fff;
+    stroke: none
+}
+
+.resp-sharing-button--whatsapp {
+    background-color: #25D366;
+    border-color: #25D366
+}
+
+.resp-sharing-button--whatsapp:active,
+.resp-sharing-button--whatsapp:hover {
+    background-color: #1DA851;
+    border-color: #1DA851
+}
+
+html {
+    position: relative;
+    min-height: 100%
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+img {
+    border-radius: 2rem;
+    border: 3px solid white;
+    z-index: 1;
+    background: linear-gradient(120deg, rgb(233, 86, 86) 0%, orange 25%, lightblue 50%, rgb(241, 116, 137) 75%, rgb(71, 240, 71) 100%);
+    animation: progress 4s linear infinite;
+}
+
+footer {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.crumbs {
+    display: block;
+    width: 95%;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#b1 {
+    border: 3px solid gold;
+    border-radius: 15px;
+}
+
+#b1:hover {
+    color: red;
+    background: rgb(6, 190, 6);
+}
+
+#b2 {
+    border: 3px solid gold;
+    border-radius: 15px;
+}
+
+#b2:hover {
+    color: red;
+    background: rgb(6, 190, 6);
+}
+
+#mainhead {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: violet;
+    display: block;
+    margin: 10px auto;
+    width: 91.5%;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7px;
+    z-index: 1;
+    background: linear-gradient(120deg, red 0%, orange 100%);
+    animation: progress 2s linear infinite;
+    border-radius: 6px;
+}
+
+@keyframes progress {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#signupimg {
+    display: block;
+    margin: 12px auto;
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 77px;
+    z-index: 1;
+    background: linear-gradient(150deg, red 0%, orange 100%);
+    animation: progress 4s linear infinite;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: #4a70c2;
+    color: white;
+    box-shadow: 3px 3px 3px #999;
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
+
+.fa-twitter {
+    background: rgb(35, 174, 216);
+    color: white;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #999;
+}
+
+.fa-google {
+    color: rgb(235, 18, 18);
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #999;
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #999;
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #999;
+}
+
+.main {
+    padding: 20px;
+    margin: 200px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-color: 2px solid red;
+}
+
+.card {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(30px);
+    /* top: 25%;
+    width: 325px;
+    height: 300px; */
+    position: relative;
+    margin-bottom: 8rem;
+    /* margin: 6% auto; */
+    padding: 10px;
+    border-style: groove;
+    border: 5px groove white;
+}
+
+.card:hover {
+    color: black;
+    box-shadow: 0 0 20px #ff0000, 0 0 60px #ff0000;
+    transition-delay: 0s;
+}
+
+#input {
+    border: 2px solid green;
+    border-radius: 9px;
+    font: bolder;
+    color: indigo;
+}
+
+body {
+    background-color: #000000;
+    color: black;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8px;
+    z-index: 1;
+    background: linear-gradient(120deg, red 0%, orange 100%);
+    animation: progress 0.8s linear infinite;
+    border-radius: 6px;
+}
+
+#submitbtn {
+    width: 45%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    color: blue;
+    margin: auto;
+    background: linear-gradient(to right, #eb5858, #ffad06, pink, orange);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+#submitbtn:hover {
+    color: blue;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0s;
+    text-decoration: none;
+}
+
+#forgot {
+    color: red;
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+/* component */
+
+.star-rating {
+    border: solid 2px rgb(3, 82, 3);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    /* justify-content: space-around; */
+    text-align: center;
+    width: 5em;
+    display: block;
+    width: 23%;
+    margin: 6px auto;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: rgb(241, 199, 199);
+    border: 2px;
+    cursor: pointer;
+}
+
+.star-rating :checked~label {
+    color: rgb(255, 154, 1);
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: rgb(255, 153, 0);
+}
+
+.star-rating_two {
+    border: solid 2px rgb(3, 82, 3);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: ;
+    font-size: 2.5em;
+    /* justify-content: space-around; */
+    text-align: center;
+    width: 5em;
+    display: block;
+    width: 23%;
+    margin: 6px auto;
+}
+
+.star-rating_two input {
+    display: none;
+}
+
+.star-rating_two label {
+    color: rgb(241, 199, 199);
+    border: 2px;
+    cursor: pointer;
+}
+
+.star-rating_two :checked~label {
+    color: rgb(255, 154, 1);
+}
+
+.star-rating_two label:hover,
+.star-rating_two label:hover~label {
+    color: rgb(255, 153, 0);
+}
+
+
+/* explanation */
+
+.center {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer {
+    position: relative;
+    margin: 0 50px;
+    background: #111;
+}
+
+.button {
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.outer button,
+.outer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outer button {
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button button {
+    height: 60px;
+    width: 210px;
+    border-radius: 50px;
+}
+
+.circle button {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.outer span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+.button span {
+    border-radius: 50px;
+}
+
+.circle span {
+    border-radius: 50%;
+}
+
+.outer:hover span:nth-child(1) {
+    filter: blur(7px);
+}
+
+.outer:hover span:nth-child(2) {
+    filter: blur(14px);
+}
+
+.outer:hover {
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media (max-width: 640px) {
+    .center {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .outer {
+        margin: 50px 0;
+    }
+}
+
+#textarea {
+    border: 2px solid red;
+}

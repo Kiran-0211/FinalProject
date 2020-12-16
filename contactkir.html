@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url(/images/dark.jpg);
+        background-size: cover;
+        backdrop-filter: blur(10px);
+    }
+    
+    .container {
+        position: relative;
+        width: 35em;
+        transition: transform 2s ease;
+    }
+    
+    .container:hover .front {
+        transform: rotateY(-180deg);
+        z-index: 0;
+    }
+    
+    .container:hover .back {
+        transform: rotateY(0deg);
+    }
+    
+    .container>div {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        border-radius: 24px;
+        text-align: center;
+        transition: transform 2s ease;
+        justify-content: space-evenly;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        backface-visibility: hidden;
+    }
+    
+    #imgres {
+        width: 500px;
+        height: 150px;
+        border: 3px solid lightblue;
+        border-radius: 1rem;
+    }
+    
+    .front {
+        position: relative;
+        padding: 3em 5em;
+        z-index: 1;
+        background: url(https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?size=626&ext=jpg);
+    }
+    
+    .front>*,
+    .back>* {
+        transform: translateZ(100px);
+        transition: transform 0.3s ease;
+    }
+    
+    .title {
+        position: relative;
+    }
+    
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        width: 50%;
+        height: 4px;
+        border-radius: 2px;
+        background: #00ff5a;
+        transform: translateX(-50%);
+    }
+    
+    .description {
+        margin-top: 1.5em;
+        display: block;
+        line-height: 180%;
+    }
+    
+    .back {
+        top: 0;
+        position: absolute;
+        padding: 3em;
+        transform: rotateY(180deg);
+        width: 100%;
+        background: #222;
+    }
+    
+    .back .title {
+        margin-bottom: 10px;
+    }
+    
+    .input-box {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    input,
+    textarea {
+        color: #fff;
+        width: 80%;
+        border: none;
+        padding: 4px 0;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: none;
+        margin-top: 20px;
+        resize: none;
+    }
+    
+    label {
+        position: absolute;
+        font-size: 13px;
+        left: 10%;
+        top: 24px;
+        pointer-events: none;
+        transition: all 0.2s;
+    }
+    
+    .input-box input:focus,
+    .input-box textarea:focus {
+        border-bottom: 2px solid #00ff5a;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:valid~label,
+    .input-box textarea:focus~label,
+    .input-box textarea:valid~label {
+        top: 10px;
+        font-size: 10px;
+        color: #00ff5a;
+    }
+    
+    .send {
+        padding: 8px 24px;
+        margin-top: 1em;
+        border: 2px solid #00ff5a;
+        border-radius: 20px;
+        background: transparent;
+        color: #00ff5a;
+        cursor: pointer;
+    }
+    
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%
+    }
+    /* Add a hover effect if you want */
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    /* Set a specific color for each brand */
+    /* Facebook */
+    
+    .fa-facebook {
+        background: #4a70c2;
+        color: white;
+        box-shadow: 3px 3px 3px #999;
+    }
+    /* Set a specific color for each brand */
+    /* Facebook */
+    
+    .fa-twitter {
+        background: rgb(35, 174, 216);
+        color: white;
+        text-decoration: none;
+        box-shadow: 3px 3px 3px #999;
+    }
+    
+    .fa-google {
+        color: rgb(235, 18, 18);
+        text-decoration: none;
+        box-shadow: 3px 3px 3px #999;
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .fa-github {
+        background: black;
+        color: white;
+        text-decoration: none;
+        box-shadow: 3px 3px 3px #999;
+    }
+    
+    .fa-linkedin {
+        background: #3B5998;
+        color: white;
+        text-decoration: none;
+        box-shadow: 3px 3px 3px #999;
+    }
+    
+    .send:focus,
+    .send:active {
+        background: #00ff5a;
+        color: #2b2b2b;
+        outline: none;
+    }
+    
+    .social {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="front">
+            <h1 class="title">KIRAN MK</h1>
+            <span class="description">Iam Kiran, iam currently UnderGraduate pursuing CSE. Im currently in my second year and im passionate in Web Developement, Artificial intelligence.etc., Feel free to Contact me!</span>
+        </div>
+        <div class="back">
+            <h1 class="title">Contact Me</h1>
+            <div class="input-box">
+                <input type="text" name="name" id="name" autocomplete="off" required>
+                <label for="name">Your name</label>
+            </div>
+            <div class="input-box">
+                <input type="text" name="email" id="email" autocomplete="off" required>
+                <label for="email">Your email</label>
+            </div>
+            <div class="input-box">
+                <textarea name="msg" id="msg" cols="30" rows="2" autocomplete="off" required></textarea>
+                <label for="msg">Your message</label>
+            </div>
+            <button class="send">Send</button>
+            <div class="social">
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                    <a href="#" class="fa fa-facebook" style="font-size: 30px;"></a>
+                </a>
+                <a type="button" class="btn-floating btn-tw btn-sm">
+                    <a href="#" class="fa fa-twitter" style="font-size: 30px;"></a>
+                </a>
+
+                <a type="button" class="btn-floating btn-git btn-sm">
+                    <a href="#" class="fa fa-github" style="font-size: 30px;"></a>
+                </a>
+                <a type="button" class="btn-floating btn-git btn-sm">
+                    <a href="#" class="fa fa-linkedin" style="font-size: 30px;"></a>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

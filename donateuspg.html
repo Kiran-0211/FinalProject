@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<style>
+    body {
+        background-image: url(/images/dark.jpg);
+        background-size: cover;
+        backdrop-filter: blur(10px);
+    }
+    
+    #color {
+        color: white;
+        font-size: 22px;
+    }
+    
+    .container {
+        margin: 4rem;
+    }
+    
+    #container2 {
+        margin: 2rem;
+        border: 2px solid white;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    
+    #btn_donate {
+        display: block;
+        width: 73%;
+        margin: 12px auto;
+        border: 2px solid white;
+        border-radius: 1rem;
+    }
+    
+    #imgden {
+        display: block;
+        widows: 53%;
+        margin: 20px auto;
+        border-radius: 2rem;
+    }
+    
+    #lineden {
+        display: block;
+        width: 43%;
+        margin: 02px auto;
+        border-radius: 5rem;
+        color: white;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <img src="/images/donate.jpg" alt="" id="imgden">
+    <div class="card-header" style=" text-align:center;border-radius:2rem;background: linear-gradient(to left, #880882, #0b8793); border: 2px solid white; " id="lineden">
+        <b id="lineden">DONATE US</b>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12" id="container2" style="margin-left: 3rem;">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" id="color" style="color: greenyellow;">PERSONAL IMFORMATION</h3>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="bodyTest">
+                            <form class="">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <!-- first name input-->
+                                        <div class="form-group">
+                                            <label for="firstname" class="control-label" id="color">FIRST NAME</label>
+                                            <div class="">
+                                                <input id="first-name" name="firstname" type="text" autocomplete="first-name" placeholder="first ame" class="form-control">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lastname" class="control-label" id="color">LAST NAME</label>
+                                            <div class="">
+                                                <input id="last-name" name="lastname" type="text" autocomplete="last-name" placeholder="last name" class="form-control">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- last name input-->
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lastname" class="control-label" id="color">BRANCH</label>
+                                            <div class="">
+                                                <input id="last-name" name="lastname" type="text" autocomplete="Branch name" placeholder="Branch name" class="form-control">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lastname" class="control-label" id="color">YEAR</label>
+                                            <div class="">
+                                                <input id="last-name" name="lastname" type="number" autocomplete="last-name" placeholder="Semester/Year" class="form-control">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- panel -->
+
+        </div>
+        <div class="col-xs-12" id="container2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 id="color" class="panel-title" style="color: greenyellow;">DONATION DETAILS</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label id="color" for="cardNumber">AMOUNT</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="Amount" placeholder="RS.129.00" required autofocus />
+                                <span class="input-group-addon" id><i class="fa fa-rupee" style="color: rgb(158, 158, 252); margin: 0.5rem; font-size: 25px;"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <label id="color" for="donateTye">FREQUENCY</label>
+                        <select name="donateType" id="donateType" class="form-control">
+    
+          <option id="color"value="once">Once</option>
+    
+          <option id="color" value="weekly">Weekly</option>
+      <option id="color" value="Fortnightly">Fortnightly</option>
+      <option id="color" value="Monthly">Monthly</option>
+    
+          </select>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-md-offset-3" id="container2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 id="color" class="panel-title" style="color: greenyellow;">PAYMENT DETAILS</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="payment-form">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label id="color" for="expMonth">CARD NUMBER</label>
+                                    </div>
+                                    <div class="input-group" style="margin-left: 1rem;">
+                                        <input type="text" class="form-control" name="cardNumber" placeholder="Valid Card Number" required autofocus data-stripe="number" />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card" style="color: rgb(158, 158, 252); margin: 0.2rem; font-size: 25px;"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <label id="color" for="expMonth">EXPIRATION DATE</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" class="form-control" name="expMonth" placeholder="MM" required data-stripe="exp_month" />
+                                        </div>
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" class="form-control" name="expYear" placeholder="YY" required data-stripe="exp_year" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label id="color" for="cvCode">CV CODE</label>
+                                    <input type="password" class="form-control" name="cvCode" placeholder="CV" required data-stripe="cvc" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button id="btn_donate" class="btn btn-success btn-lg btn-block" type="submit" onclick="window.location='donatemiddlepage.html'">DONATE NOW</button>
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+
+                        <script type="12280d5ac18791d49fa3142d-text/javascript">
+                            function myFunction() {
+                                window.print();
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

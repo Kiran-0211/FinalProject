@@ -1,0 +1,320 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#b2 {
+    border: 3px solid gold;
+    border-radius: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: url(/images/dark.jpg);
+    background-size: cover;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.crumbs {
+    display: block;
+    width: 97%;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.float {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 120px;
+    right: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    stroke: #fff;
+    background-color: #25D366;
+    border-color: #fff
+}
+
+.resp-sharing-button__icon,
+.resp-sharing-button__link {
+    display: inline-block
+}
+
+.resp-sharing-button__link {
+    text-decoration: none;
+    color: #fff;
+    margin: .5em
+}
+
+.resp-sharing-button {
+    border-radius: 5px;
+    transition: 25ms ease-out;
+    padding: .2em .7em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.resp-sharing-button__icon svg {
+    width: 1.9em;
+    height: 2.4em;
+    margin-left: .1em
+}
+
+.resp-sharing-button--small svg {
+    margin: 0;
+    vertical-align: middle
+}
+
+.resp-sharing-button__icon {
+    stroke: #fff;
+    fill: none
+}
+
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+    fill: #fff;
+    stroke: none
+}
+
+.html {
+    backdrop-filter: blur(30px);
+}
+
+.resp-sharing-button--whatsapp {
+    background-color: #25D366;
+    border-color: #25D366
+}
+
+.resp-sharing-button--whatsapp:active,
+.resp-sharing-button--whatsapp:hover {
+    background-color: #1DA851;
+    border-color: #1DA851
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 80px 0;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7px;
+    z-index: 1;
+    background: linear-gradient(120deg, red 0%, orange 100%);
+    animation: progress 2s linear infinite;
+    border-radius: 6px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+   
+}
+
+@keyframes progress {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.container .card {
+    position: relative;
+    min-width: 340px;
+    height: 420px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: linear-gradient(to bottom, #2a2b2f, #ff0000);
+    border: 2px solid #1e1f23;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .card .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.container .card .box:hover {
+    transform: scale(1.07);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.1);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+}
+
+.container .card .box .content h3 {
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+/* 
+.container1 {
+    width: 100%;
+} */
+
+.container .card .box .content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #000;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card:nth-child(1) .box .content a {
+    background: linear-gradient(to right, #ff0000, #ffad06);
+}
+
+.container .card:nth-child(2) .box .content a {
+    background: linear-gradient(to right, #031321, #ffad06);
+}
+
+.container .card:nth-child(3) .box .content a {
+    background: linear-gradient(to right, #33ff00, #ffad06);
+}
+
+.container .card:nth-child(4) .box .content a {
+    background: linear-gradient(to right, #e22645, #ffad06);
+}
+
+.container .card:nth-child(5) .box .content a {
+    background: linear-gradient(to right, #00ffc8, #ffad06);
+}
+
+.container .card:nth-child(1) .box image {
+    image-resolution: snap;
+}
+
+.container .card:nth-child(2) .box image {
+    image-resolution: snap;
+}
+
+.container .card:nth-child(3) .box image {
+    image-resolution: snap;
+}
+
+.container .card:nth-child(4) .box image {
+    image-resolution: snap;
+}
+
+.container .card:nth-child(5) .box image {
+    image-resolution: snap;
+}
+
+.container .card:nth-child(1) .box .content a:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3;
+}
+
+.container .card:nth-child(2) .box .content a:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3;
+}
+
+.container .card:nth-child(3) .box .content a:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3;
+}
+
+.container .card:nth-child(4) .box .content a:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3;
+}
+
+.container .card:nth-child(5) .box .content a:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3;
+}
+
+#navimg {
+    border: 5rem solid white;
+}
+
+body {
+    /* background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: indianred; */
+}
+
+#btn {
+    border-radius: 20px;
+    transition: all 0.4s ease-out;
+}
+
+#btn:hover {
+    background-color: yellow;
+    color: red;
+    transform: scale(1.1);
+}

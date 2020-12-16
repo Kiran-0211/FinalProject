@@ -1,0 +1,224 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<div class="detailBox" style="border-radius: 1rem;">
+    <div class="titleBox" style="background-color: rgb(122, 236, 122);">
+        <label style="color: black;text-align: center; border-radius: 1rem; font-size: 30px;">DISCUSSION FORUM - CSE</label>
+        <button type="button" class="close" aria-hidden="true">&times;</button>
+    </div>
+    <div class="commentBox" style="border-radius: 1rem;">
+        <style>
+            @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+            .detailBox {
+                width: 1200px;
+                border: 2px solid #bbb;
+                margin: 80px;
+                border-radius: 1rem;
+            }
+            
+            body {
+                background-image: url(/images/dark.jpg);
+                background-size: cover;
+                /* background: linear-gradient(to left, #360033, #0b8793); */
+            }
+            
+            .titleBox {
+                background-color: #fdfdfd;
+                padding: 10px;
+            }
+            
+            .titleBox label {
+                color: #444;
+                margin: 0;
+                display: inline-block;
+            }
+            
+            .commentBox {
+                padding: 10px;
+                border-top: 1px dotted black;
+            }
+            
+            .commentBox .form-group:first-child,
+            .actionBox .form-group:first-child {
+                width: 100%;
+            }
+            
+            .commentBox .form-group:nth-child(2),
+            .actionBox .form-group:nth-child(2) {
+                width: 18%;
+            }
+            
+            .actionBox .form-group * {
+                width: 100%;
+            }
+            
+            .taskDescription {
+                margin-top: 10px 0;
+            }
+            
+            .commentList {
+                padding: 0;
+                list-style: none;
+                max-height: 300px;
+                overflow: auto;
+            }
+            
+            .commentList li {
+                margin: 0;
+                margin-top: 10px;
+            }
+            
+            .commentList li>div {
+                display: table-cell;
+            }
+            
+            .commenterImage {
+                width: 30px;
+                margin-right: 5px;
+                height: 100%;
+                float: left;
+            }
+            
+            .commenterImage img {
+                width: 100%;
+                border-radius: 50%;
+            }
+            
+            .commentText p {
+                margin: 0;
+            }
+            
+            .sub-text {
+                color: rgb(106, 106, 206);
+                font-family: verdana;
+                font-size: 13px;
+                font-weight: 800;
+            }
+            
+            .actionBox {
+                border-top: 1px dotted #bbb;
+                padding: 10px;
+            }
+            
+            #btn {
+                margin: 2px;
+                border-radius: 1rem;
+                font-size: 16px;
+            }
+            
+            #name {
+                color: rgb(235, 106, 235);
+                font-size: 20px;
+                font-weight: bold;
+            }
+            
+            label {
+                display: block;
+                margin: 10px auto;
+                width: 103%;
+            }
+            
+            #add {
+                font-weight: bolder;
+                background-color: rgb(141, 238, 128);
+                width: 95%;
+                border: 3px solid rgb(255, 53, 70);
+                border-radius: 1rem;
+            }
+            
+            img {
+                border: 3px solid rgb(99, 248, 106);
+            }
+            
+            #emojis {
+                font-size: 40px;
+                padding: 2px;
+            }
+            
+            #emj {
+                color: rgb(58, 233, 14);
+                padding: 2px;
+                font-weight: bolder;
+                font-size: 50px;
+            }
+            
+            .subcon {
+                font-size: 20px;
+            }
+            
+            #thumbs {
+                font-size: 22px;
+            }
+        </style>
+
+        <head>
+
+            <body>
+                <p class="taskDescription" style="color:white; padding: 2px; font-weight: bold; font-size: 18px;"><em><b><u style="color: rgb(248, 74, 74); font-size: 22px;">NOTE</u></b> : THIS FORUM IS ONLY MEANT TO CLEAR YOUR DOUBTS AND CLEARLY NOT FOR MALPRACTICE AND PEOPLE USING IT IN THE WRONG WAY WILL BE BANNED!</em></p>
+    </div>
+    <div class="actionBox">
+        <ul class="commentList">
+            <li>
+                <div class="commenterImage">
+                    <img src="http://placekitten.com/50/50" />
+                </div>
+                <div class="commentText">
+                    <p id="name">JIMMY</p>
+                    <p class="subcon" style="color: white;">Heys guys! this is kiran here!!Anyone got the Annual College Calendar?</p> <span class="date sub-text" style="color: rgb(219, 189, 189)">on December 11th, 2020 at 5:10 am</span>
+
+                </div>
+            </li>
+            <i id="thumbs" class="fa fa-thumbs-up" style="color: rgb(100, 100, 226);"></i>
+            <b style="color: rgb(100, 236, 100);" id="thumbs">10</b>
+            <i id="thumbs" class="fa fa-thumbs-down" style="color: pink;"></i>
+            <b style="color: red" id="thumbs"> 5</b>
+            <button id="btn">Reply</button><b style="color: rgb(100, 236, 100);" id="thumbs">2</b>
+            <li>
+                <div class="commenterImage">
+                    <img src="http://placekitten.com/45/45" />
+                </div>
+                <div class="commentText">
+                    <p id="name">JEY</p>
+                    <p class="subcon" style="color: white;">Hello Jimmy !! Nope but if you get please share here!</p> <span class="date sub-text" style="color: rgb(219, 189, 189)">on December 11th, 2020 at 6:20 am (Reply To Kiran).</span>
+
+                </div>
+            </li>
+            <i id="thumbs" class="fa fa-thumbs-up" style="color: rgb(100, 100, 226);;"></i>
+            <b style="color: rgb(100, 236, 100);" id="thumbs">8</b>
+            <i id="thumbs" class="fa fa-thumbs-down" style="color: pink;"></i>
+            <b style="color: red;" id="thumbs">2</b>
+            <button id="btn">Reply</button><b style="color: rgb(100, 236, 100);;" id="thumbs">1</b>
+            <li>
+                <div class="commenterImage">
+                    <img src="http://placekitten.com/40/40" />
+                </div>
+                <div class="commentText">
+                    <p id="name">NANOPE</p>
+                    <p class="subcon" style="color: white;">Hey guys i heard that it would be given this Week!</p> <span class="date sub-text" style="color: rgb(219, 189, 189)">on December 11th, 2020 at 7:30 pm (Reply To Kiran).</span>
+
+                </div>
+            </li>
+            <i id="thumbs" class="fa fa-thumbs-up" style="color: rgb(100, 100, 226);; font-size: 30px;"></i>
+            <b style="color: rgb(100, 236, 100);" id="thumbs">5</b>
+            <i id="thumbs" class="fa fa-thumbs-down" style="color: pink;"></i>
+            <b style="color: red" id="thumbs">1</b>
+            <button id="btn">Reply</button><b style="color: rgb(100, 236, 100);;"></b>
+        </ul>
+        <form class="form-inline" role="form">
+            <div class="form-group" style="padding:2px;">
+                <input class="form-control" type="text" placeholder="Your Comments/Doubts.." style="background-color: rgb(236, 223, 223);">
+            </div>
+            <i class="fa fa-microphone" style="color:rgb(161, 248, 61); font-size: 16px; font-weight: bold; border: 3px solid white;border-radius: 1.8rem;padding: 7px;"></i>
+            <i class="fa fa-camera" style="color:rgb(161, 248, 61); width:fit-content; font-size: 16px; font-weight: bold; border: 3px solid white;border-radius: 1.8rem;padding: 7px;"></i>
+            <i class="fa fa-file" style="color:rgb(161, 248, 61); font-size: 16px; font-weight: bold; border: 3px solid white;border-radius: 1.8rem;padding: 7px;"></i>
+            <div class="form-group" style="padding:2px;">
+
+                <button id="add" class="btn btn-default"><b>POST</b></button>
+            </div>
+        </form>
+
+        <span id="emj"><button type="button" class="btn btn-success"><b id="clr" style="color: rgb(8, 5, 59);">EMOJIS</b></button></span>
+        <span id="emojis">&#x1F602; &#x1F60D; &#x1F60E; &#X1F635; &#X1F609; &#X1F607; &#X1F618; &#X1F628; &#x1F62D; &#x1F601; &#x1F620; &#X1F47A; &#X1F47D; &#X1F496; &#X2764; &#X1F44B; </span>
+        </head>
+    </div>
+</div>
+</body>

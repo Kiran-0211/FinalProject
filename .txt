@@ -1,0 +1,5 @@
+Hey!guys this is Errichto.I would like to share my placement experience..<br>1) For coding interviews, you will first need to explain your approach verbally and then if the interviewer is satisfied with the runtime complexity, he will
+                        ask you to write the code with proper syntax.<br>2) You will not have to take input, just take the input as function parameters, and write the complete logic in the function).<br>3) Practice explaining your approach. For behavioral
+                        questions, find the set of questions <u>https://leetcode.com/discuss/interview-question/437631/Amazon-Leadership-Principle-(Behavioral)-Questions</u>.<br>4) Here is a nice simple blog explaining the process of behavioral interviews
+                        at amazon <u>(https://interviewgenie.com/blog-1/interviewing-at-amazon-behavioral-interview-questions)</u>
+                        <br>5) Make a list of tasks that you did For every question try to fit those tasks into the situation For every question be ready with at least two tasks.</p> <span class="date sub-text" style="color: rgb(219, 189, 189)">on December 11th, 2020 at 5:10 am</span>

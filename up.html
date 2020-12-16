@@ -1,0 +1,218 @@
+<!-- ***** THIS IS ONLY THE SIGN UP PAGE FOR PROJECT WORK - 1 *****-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS And Font Awesome Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.css">
+    <script type="text/javascript" src="val.js"></script>
+    <title>PROJECT-WORK-1</title>
+
+    <!--Navbar-->
+
+    <nav id="nav" class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top sticky-onscroll" data-toggle="sticky-onscroll">
+        <!-- Image and text -->
+
+        <nav class="navbar navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="#">
+
+                <img src="/images/bmsce.jpg" width="32" height="32" class="d-inline-block align-top" alt="" loading="lazy">
+                <b style="color: white;" id="mybmsce">MY BMSCE</b>
+            </a>
+
+            <!-- the page loader html code starts here -->
+            <div class="progress-bar" id="progress-bar"></div>
+            <div class="text">
+        </nav>
+        <div class="sg">
+            <a href="login.html"><button id="b2" class="btn btn-primary" type="submit" style="margin-left: 1000px;"><b>LOG IN</b></button></a>
+        </div>
+
+
+    </nav>
+
+</head>
+
+
+<div class="main">
+    <!-- Example single danger button -->
+
+
+    <!-- Material form register -->
+    <div class="card" style="background-image: url(/images/dark.jpg);">
+
+        <img src="/images/bmsce.jpg" id="signupimg" alt="">
+        <h5 id="mainhead" style="padding: 15px; text-align: center;" class="">
+
+            <div class="btn-group" id="drop">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <b style="color:white;"> SIGN UP</b>
+        </button>
+                <div class="dropdown-menu">
+
+                    <a class="dropdown-item" href="up.html"><b>STUDENTS</b></a>
+                    <a class="dropdown-item" href="seniorsignup.html"><b>SENIORS</b></a>
+                    <a class="dropdown-item" href="professorsignup.html"><b>PROFESSORS</b></a>
+
+                </div>
+            </div>
+            <hr style="color: white; font-weight: bolder; height: 2px; border: none; background-color: white;">
+            <strong style="color: white;">SIGN UP PAGE - STUDENTS</strong>
+        </h5>
+
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0">
+
+            <!-- Form -->
+            <form class="text-center" style="color: black;" action="#!">
+
+                <div class="form-row">
+                    <div class="col">
+                        <!-- First name -->
+                        <div class="md-form">
+                            <input id="input" type="text" id="materialRegisterFormFirstName" class="form-control">
+                            <label for="m id=" input " aterialRegisterFormFirstName"><b style="color: white;">FIRST NAME</b><span id="star"> *</span></label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Nick name -->
+                        <div class="md-form">
+                            <input id="input" type="email" id="materialRegisterFormLastName" class="form-control">
+                            <label for="materialRegisterFormLastName"><b style="color: white;">NICK NAME</b><span id="star"> *</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="md-form mt-0">
+                    <input id="input" type="email" id="materialRegisterFormEmail" class="form-control">
+                    <label for="materialRegisterFormEmail"><b style="color: white;">E-MAIL</b><span id="star"> *</span></label>
+                </div>
+
+                <!-- phone number -->
+                <div class="md-form mt-0">
+                    <input id="input" type="number" id="materialRegisterFormEmail" class="form-control">
+                    <label for="materialRegisterFormEmail"><b style="color: white;"> PHONE NUMBER</b></label>
+                    <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                        <b  style="color: gold;">Not Mandatory</b>
+                    </small>
+                </div>
+                <!-- Password -->
+                <div class="md-form">
+                    <input id="input" type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                    <label for="materialRegisterFormPassword"><b style="color: white;">PASSWORD</b><span id="star"> *</span></label>
+                    <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                        <b style="color: gold;">At least 8 characters and 1 digit</b>
+                    </small>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="md-form">
+                    <input id="input" type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+                    <label for="materialRegisterFormPhone"><b style="color: white;">CONFIRM PASSWORD</b><span id="star"> *</span></label>
+                    <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                        <b  style="color: gold;">Verifying Password</b>
+                    </small>
+                </div>
+
+
+
+
+                <!-- Sign up button -->
+                <button id="submitbtn" onclick="window.location='middlepage.html'" class="btn btn-primary" type="button"><b>SIGN UP</b></button>
+
+                <!-- Social register -->
+                <p><b style="color: white; margin: 12px;">or sign up with :</b></p>
+
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                    <a href="#" class="fa fa-facebook" style="font-size: 30px;"></a>
+                </a>
+                <a type="button" class="btn-floating btn-tw btn-sm">
+                    <a href="#" class="fa fa-twitter" style="font-size: 30px;"></a>
+                </a>
+                <a type="button" class="btn-floating btn-li btn-sm">
+                    <a href="#" class="fa fa-google" style="font-size: 30px;"></a>
+                </a>
+                <a type="button" class="btn-floating btn-git btn-sm">
+                    <a href="#" class="fa fa-github" style="font-size: 30px;"></a>
+                </a>
+                <a type="button" class="btn-floating btn-git btn-sm">
+                    <a href="#" class="fa fa-linkedin" style="font-size: 30px;"></a>
+                </a>
+                <hr>
+                <p><b style="color: white;">Already a member?</b>
+                    <a href="login.html"><b style="color: gold;">Log in</b></a>
+                </p>
+                <!-- Link for Demo Video -->
+                <p><b style="color: white;">Before clicking</b>
+                    <em><b id="btm">Sign up</b></em> <b style="color: white;">Watch Our Demonstration Video</b>
+                    <a href="" target="_blank"><b id="btm2">Video Link</b></a>
+
+            </form>
+            <!-- Form -->
+            <button onclick="Start()" id="submitbtn" class="btn btn-primary" type="submit" style=""><b>SIGN UP</b></button>
+        </div>
+
+    </div>
+    <!-- Material form register -->
+</div>
+
+<!--This is the Footer The Copyright-->
+<footer class="py-3 bg-dark footer">
+    <div class="container">
+        <p class="m-0 text-center text-red"> &copy; Copyright 2020. All Rights Reserved </p>
+    </div>
+</footer>
+
+<!--The Whatsapp Floating Icon-->
+<a href="whatsapp://send?text=https%3A%2F%2Fwww.mybmsce.com%2%2F%3Futm_source%3Dwhatsapp%26utm_medium%3Dsocial" class="float">
+    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
+        </svg>
+    </div>
+</a>
+
+<body>
+    </div>
+    <!--This js code is for the progress bar!-->
+    <script>
+        window.onscroll = function() {
+            scrollIndicator();
+        };
+
+        scrollIndicator = () => {
+            const winScroll =
+                document.body.scrollTop ||
+
+                document.documentElement.scrollTop;
+
+            const height =
+                document.documentElement.scrollHeight -
+                document.documentElement.clientHeight;
+
+            const scrolled = (winScroll / height) * 100;
+
+            // console.log(scrolled);
+            document.getElementById("progress-bar").style.width =
+
+                scrolled + "%";
+        };
+    </script>
+
+    <!--All the required Bootstrap Links-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

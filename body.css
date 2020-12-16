@@ -1,0 +1,176 @@
+.body {
+    padding: 2% 5%;
+    width: 71%;
+    min-height: 25%;
+    border-right: 1px solid #eaeaea;
+    float: left;
+}
+
+.bg-light {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 35px;
+    background-color: rgb(248, 147, 147)!important
+}
+
+.branchSelect {
+    padding: 3% 0 0 5%
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 388px;
+    font-weight: 800;
+    text-align: left;
+    border-radius: 20px;
+    font-size: 17.5px;
+    color: white;
+}
+
+#last {
+    margin-bottom: 120px;
+}
+
+.placeholder {
+    color: red;
+}
+
+input,
+select {
+    display: inline-block;
+    float: left;
+    background: #d5fc92;
+    border: 2px solid #06f506;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 5px;
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+.inputsidebar {
+    background: #c2ffff;
+    float: left;
+    width: 45px;
+    border: 1px solid #03c396;
+    margin: 3px;
+    color: rgb(1, 90, 192);
+    border-radius: 0 4px 4px 0;
+    padding: 5px
+}
+
+.labs {
+    margin: 50px 0
+}
+
+.sgpa {
+    background: #c6dbe4;
+    color: rgb(39, 143, 8);
+    padding: 8px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1efef;
+    color: #fff;
+    padding: 40px;
+    border-top: 1px solid #fcf8f8;
+    float: left;
+    width: 100%
+}
+
+footer a {
+    color: #fff
+}
+
+footer a:hover {
+    color: #fff
+}
+
+.navbar-nav {
+    font-weight: 600
+}
+
+a.nav-item.nav-link {
+    margin: 7px;
+    padding: 1px;
+    color: #fdfbfb!important
+}
+
+.sidebar {
+    width: 29%;
+    float: right;
+    padding: 1%
+}
+
+@media screen and (max-width:992px) {
+    .body {
+        width: 100%;
+        float: none;
+        border-right: 0
+    }
+    .sidebar {
+        width: 100%;
+        float: none;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        min-height: 300px
+    }
+}
+
+#option {
+    font-weight: bolder;
+}
+
+input[type=reset] {
+    float: right;
+    background: #e70d2d;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+.download {
+    float: right;
+    background: #1db0e8;
+    color: #fff;
+    padding: 2px 9px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 5px;
+}
+
+#label {
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(226, 17, 198)
+}
+
+.visible {
+    display: none
+}
+
+@media print {
+    .sidebar {
+        display: none
+    }
+    .visible {
+        display: block
+    }
+    .download {
+        display: none
+    }
+    input[type=reset] {
+        display: none
+    }
+}

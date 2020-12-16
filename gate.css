@@ -1,0 +1,75 @@
+body {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0;
+    background: url(/Users/kiranmk/Downloads/backg1.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    padding: -20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 300px;
+    color: black;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff0000, #ffad06);
+}
+
+.title:hover {
+    transform: scale(1.005);
+    background: linear-gradient(to left, #ffad06, #ffaabb)
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    width: 750px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    border: 10px solid yellow;
+    backdrop-filter: blur(1000px);
+}
+
+.container:hover {
+    box-shadow: 0px 0px 40px #00abcd, 00px 00px 40px #0012ab, 0px 0px 40px #0034cd, 0px 0px 40px #0056ef;
+}
+
+.content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: yellow;
+    text-align: center;
+}
+
+.images img {
+    width: 135px;
+    height: 135px;
+}
+
+.images img:hover {
+    transform: scale(1.25);
+    box-shadow: 0px 0px 10px #00abcd, 00px 00px 20px #0012ab, 0px 0px 40px #0034cd, 0px 0px 40px #0056ef;
+}
+
+.images {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
